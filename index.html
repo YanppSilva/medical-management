@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medical Management</title>
+  <title>Medical Management | Sing Up</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/sing-up-screen.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+  <script src="app/main.js" defer></script>
 </head>
 
 <body>
@@ -18,27 +20,27 @@
     <h1 class="container-tittle">Medical Management</h1>
     <div class="container-sing-up">
       <p class="container-sing-up-info">
-        Crie as informações que serão utilizadas para seu acesso ao sistema
+        Crie as informações que serão utilizadas para seu acesso ao sistema!
       </p>
-      <!-- lembra de alterar o atributo action para apontar para o URL do processamento do formulário no nosso servidor -->
+      <!-- lembrar de alterar o atributo action para apontar para o URL do processamento do formulário no nosso servidor -->
       <div class="textfield">
-        <form class="form-sing-up" action="/processar-formulario" method="POST">
-        <label for="login">*Login:</label>
-        <input type="text" id="login" name="login" required>
+        <form class="form-sing-up" id="form" action="/processar-formulario" method="POST">
+        <label for="login">*Email:</label>
+        <input type="email" id="email" name="email">
 
         <label for="numero_conselho">*Nº de Conselho:</label>
-        <input type="text" id="numero_conselho" name="numero_conselho" pattern="^\d{6}$" required>
+        <input type="text" id="numero_conselho" name="numero_conselho" pattern="^\d{6}$">
 
-        <label for="senha">*Senha (entre 6 e 15 caracteres, contendo uma letra e um número):</label>
-        <input type="password" id="senha" name="senha" pattern="^(?=.*[A-Za-z])(?=.*\d).{6,15}$" required>
+        <label for="senha">*Senha (entre 6 a 15 caracteres, contendo uma letra e um número):</label>
+        <input type="password" id="senha" name="senha" pattern="^(?=.*[A-Za-z])(?=.*\d).{6,15}$">
 
         <label for="confirmar_senha">*Confirmar Senha:</label>
-        <input type="password" id="confirmar_senha" name="confirmar_senha" required>
+        <input type="password" id="confirmar_senha" name="confirmar_senha">
 
-        <input class="last-child" type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
 
         <div class="container-footer">
-          <p class="container-footer-text">Já tem uma conta? <a href="#"> Sing in</a></p>
+          <p class="container-footer-text">Já tem uma conta? <a href="sing-in.html"> Entrar</a></p>
         </div>
         </form>
       </div>

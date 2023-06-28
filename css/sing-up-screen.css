@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Opens Sans', sans-serif;
+}
+
+body {
+  background-color: #00A7E1;
+  background-image: url(../assets/img/banner-sing-up.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(5px);  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-tittle {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom:20px;
+  max-width: fit-content;
+  width: 85%;
+  text-align: center;
+}
+
+.container-sing-up {
+  background-color: #FFFFFF;  
+  height: auto;
+  max-width: 450px;
+  width: 85%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.container-sing-up-info {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.form-sing-up {
+  display: flex;
+  flex-direction: column;
+}
+
+.textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.textfield input {
+  width: 100%;
+  border: 1px solid #7A7D7D;;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fff;
+  font-size: .8rem;
+  margin-bottom: 20px;
+}
+
+.textfield .last-child {
+  border: none;
+  background-color: #6096ba;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.textfield .last-child:hover {
+  background-color: #4d8bb4;
+  transition: 150ms;
+}
+
+.textfield label {
+  font-size: .9rem;
+  color: #7A7D7D;
+}
+
+.textfield::placeholder {
+  color: red;  
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.container-footer-text {
+  font-size: .9rem;
+  color: #7A7D7D;
+}

@@ -27,7 +27,14 @@ form.addEventListener('submit', (event) => {
     return;
   }
 
-  form.submit();
+  if (senhaInput.value !== confirmaSenha.value) {
+    alert("As senhas não condizem, por favor verificar e ajustar");
+    return;
+  }
+
+  form.addEventListener('submit', (event) => {
+    window.location.href = 'tela-login.html';
+  });
 });
 
 function emailValido(email) {

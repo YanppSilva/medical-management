@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tela de Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 100px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .success-message {
+      text-align: center;
+      color: #4CAF50;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Tela de Login</h2>
+    <p class="success-message" style="display: none;">Login bem-sucedido!</p>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      const successMessage = document.querySelector('.success-message');
+      successMessage.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
